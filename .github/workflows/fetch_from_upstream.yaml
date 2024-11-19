@@ -38,5 +38,5 @@ jobs:
           git remote add upstream https://github.com/zqdou/kraken.git
           git remote update
           git config --global merge.ours.driver true
-          git merge ${{ env.ORIGINAL_REPO_NAME }}/main --allow-unrelated-histories -s ours
+          git merge upstream/v1 --allow-unrelated-histories -s ours
           git push origin $(git rev-parse --abbrev-ref HEAD)
