@@ -39,4 +39,5 @@ jobs:
           git remote update
           git config --global merge.ours.driver true
           git merge upstream/v1 --allow-unrelated-histories -s ours
+          git checkout v1
           git push origin $(git rev-parse --abbrev-ref HEAD)
