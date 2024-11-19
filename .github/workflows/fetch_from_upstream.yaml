@@ -36,5 +36,4 @@ jobs:
           git config --global user.email "57290432+cloudnexus-gha-actions[bot]@users.noreply.github.com"
           ls -al
           git remote add upstream https://github.com/zqdou/kraken.git
-          git checkout v1
-          git fetch upstream && git pull && git push origin HEAD
+          git fetch upstream && git checkout -b v1 upstream/v1 && git push origin HEAD
