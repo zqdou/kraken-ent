@@ -22,13 +22,13 @@ jobs:
           privateKey: '${{ secrets.SYNC_GITHUB_APP_PRIVATE_KEY }}'
           installationId: '${{ secrets.SYNC_GITHUB_APP_INSTALLATION_ID }}'
           
-      - name: Checkout source repository        
+      - name: Checkout the downstream repository        
         uses: actions/checkout@v4
         with:
           token: '${{steps.github-auth.outputs.github-token }}'
           fetch-depth: 0
 
-      - name: pull from upstream repository
+      - name: pull from the upstream repository
         env:
           GITHUB_TOKEN: '${{ steps.github-auth.outputs.github-token }}'
         run: |
