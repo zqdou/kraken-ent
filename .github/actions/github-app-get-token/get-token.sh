@@ -106,3 +106,5 @@ else
     echo -e "Token has these permissions:\n$(jq -r '.permissions' <<<"$GITHUB_RESPONSE")"
     echo -e "With access to these repos:\n$(jq -r '.repositories[].full_name' <<<"$GITHUB_RESPONSE")"
 fi
+
+## test exclude
