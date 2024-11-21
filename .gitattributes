@@ -1,0 +1,3 @@
+README.md merge=ours
+sonar-project.properties merge=ours
+.github/**/* merge=ours
