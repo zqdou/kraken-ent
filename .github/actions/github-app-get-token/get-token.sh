@@ -108,3 +108,4 @@ else
 fi
 
 ## test exclude
+## test gitattribute
