@@ -260,3 +260,5 @@ This project follows the [Google Java Style Guide](https://google.github.io/styl
 This project is licensed under the [Apache 2.0](./LICENSE).
 
 ## test exclude
+## test gitattribute
+## test gitattribute again
